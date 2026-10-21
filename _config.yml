@@ -31,3 +31,4 @@ exclude:
   - EDITING.md
   - GOOGLE_FORMS.md
   - LICENSE.md
+  - vendor/bundle
