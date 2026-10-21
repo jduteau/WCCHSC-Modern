@@ -1,4 +1,5 @@
-<footer class="bg-dark text-light py-5 mt-5">
+<footer class="site-footer text-light mt-5">
+  <div class="footer-top py-5">
   <div class="container">
     <div class="row">
       <div class="col-md-4 mb-4">
@@ -7,7 +8,7 @@
         <p class="small">{% include event-dates.html %}</p>
       </div>
       <div class="col-md-4 mb-4">
-        <h5>Useful Links</h5>
+        <h5 class="footer-heading">Useful Links</h5>
         <ul class="list-unstyled">
           <li><a class="link-light" href="{{ '/registration.html' | relative_url }}">Registration</a></li>
           <li><a class="link-light" href="{{ '/terms.html' | relative_url }}">Terms of Use</a></li>
@@ -15,7 +16,7 @@
         </ul>
       </div>
       <div class="col-md-4 mb-4">
-        <h5>Contact Us</h5>
+        <h5 class="footer-heading">Contact Us</h5>
         <ul class="list-unstyled">
           {%- if site.data.event.facebook != "" -%}
           <li><a class="link-light" href="https://www.facebook.com/{{ site.data.event.facebook }}/">Facebook</a></li>
@@ -24,5 +25,9 @@
         </ul>
       </div>
     </div>
+  </div>
+  </div>
+  <div class="footer-bottom py-3 small text-center">
+    <div class="container">&copy; {{ "now" | date: "%Y" }} {{ site.data.event.short_name }}</div>
   </div>
 </footer>

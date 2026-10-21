@@ -1,7 +1,7 @@
-<section class="hero text-center text-white d-flex align-items-center" style="background-image: linear-gradient(rgba(0,0,0,{{ site.data.theme.hero_overlay }}), rgba(0,0,0,{{ site.data.theme.hero_overlay }})), url('{{ site.data.event.hero_image | relative_url }}');">
+<section class="hero text-center text-white d-flex align-items-center" style="background-image: linear-gradient(rgba(119,76,29,{{ site.data.theme.hero_overlay }}), rgba(119,76,29,{{ site.data.theme.hero_overlay }})), url('{{ site.data.event.hero_image | relative_url }}');">
   <div class="container py-5">
-    <h1 class="display-4 fw-bold">{{ site.data.event.name }}</h1>
-    <p class="display-6 my-3">{{ site.data.event.theme }}</p>
+    <h1 class="display-4 fw-bold text-uppercase text-white">{{ site.data.event.name }}</h1>
+    <p class="display-6 my-3 text-uppercase fw-semibold">{{ site.data.event.theme }}</p>
     <p class="fs-3 mb-4">{% include event-dates.html %}</p>
     <div class="mb-4">
       {%- if site.data.event.show_schedule -%}<a href="#schedule" class="btn btn-primary btn-lg m-1">Schedule</a>{%- endif -%}

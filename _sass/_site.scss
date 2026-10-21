@@ -32,3 +32,79 @@
 .navbar .nav-link.active {
   font-weight: 700;
 }
+
+// Look and feel matched to the previous site
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.page-content h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.text-muted,
+.lead {
+  color: #9195a2 !important;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.navbar .nav-link {
+  font-family: $headings-font-family;
+  font-weight: 600;
+  color: rgba(202, 206, 221, .8);
+
+  &:hover,
+  &:focus,
+  &.active {
+    color: $white;
+  }
+}
+
+.btn-secondary {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    color: #002e3e;
+    font-weight: 700;
+  }
+
+  &:hover {
+    background-color: #002e3e;
+    border-color: #002e3e;
+    color: $white;
+  }
+}
+
+.hero h1,
+.hero .display-6 {
+  font-family: $headings-font-family;
+  letter-spacing: 1px;
+}
+
+.site-footer {
+  background: #00202b;
+
+  .footer-top {
+    background: #002e3e;
+  }
+
+  .footer-heading {
+    font-size: .875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  a:hover {
+    color: $secondary !important;
+  }
+}

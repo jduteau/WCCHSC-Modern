@@ -61,8 +61,10 @@ $border-radius-sm:            .3rem !default;
 // Fonts
 
 // stylelint-disable-next-line value-keyword-case
-$headings-font-family:        Montserrat, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
-$headings-color:              $gray-700 !default;
+$font-family-sans-serif:     "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$headings-font-family:        Raleway, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$headings-color:              #002e3e !default;
+$body-color:                  #2f3138 !default;
 
 // Tables
 
