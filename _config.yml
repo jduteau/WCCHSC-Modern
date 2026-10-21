@@ -6,7 +6,9 @@
 title: WCCHSC
 description: >-
   Western Canadian Catholic Home School Conference
-url: "https://www.wcchsc.net"
+# GO-LIVE: change this url, the CNAME file, and set noindex to false (see EDITING.md)
+url: "https://test.wcchsc.net"
+noindex: true            # true = ask search engines not to list the site (test site)
 baseurl: ""
 repository: "jduteau/WCCHSC-Modern"
 

@@ -47,8 +47,15 @@ If you make a mistake, the site's build will turn red in **Actions** and the old
 * Spaces at the start of lines in the `.yml` files matter. Copy a whole existing block rather than typing from scratch.
 * Don't remove the quote marks around text values.
 
-## Domain and publishing (one-time setup, for the site owner)
-* GitHub: **Settings > Pages > Source: GitHub Actions**, custom domain `www.wcchsc.net`, tick **Enforce HTTPS**.
-* DNS for `wcchsc.net`: `CNAME` record `www` -> `jduteau.github.io`. For the bare domain `wcchsc.net` add four `A` records (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153) so it redirects to `www`.
-* Do the same for `wcchsc.org`; GitHub Pages redirects only one custom domain, so point `wcchsc.org` at your registrar's "URL redirect" to `https://www.wcchsc.net` (or tell your DNS host to forward it).
-* Once it works, remove the old NearlyFreeSpeech deployment.
+## Publishing and going live
+**Test site (now):** the site publishes to `test.wcchsc.net` and asks search engines not to list it.
+* GitHub: **Settings > Pages > Source: GitHub Actions**, custom domain `test.wcchsc.net`, tick **Enforce HTTPS**.
+* DNS for `wcchsc.net`: `CNAME` record `test` -> `jduteau.github.io`.
+
+**Going live on www.wcchsc.net**
+1. Edit `CNAME` (contains one line) to `www.wcchsc.net`.
+2. In `_config.yml` set `url: "https://www.wcchsc.net"` and `noindex: false`. Commit.
+3. GitHub: **Settings > Pages**, change the custom domain to `www.wcchsc.net`.
+4. DNS for `wcchsc.net`: `CNAME` record `www` -> `jduteau.github.io`; for the bare domain add four `A` records (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153) so it redirects to `www`.
+5. `wcchsc.org`: GitHub Pages serves only one custom domain, so use your registrar's "URL redirect" to send `wcchsc.org` to `https://www.wcchsc.net`.
+6. Once it works, remove the old NearlyFreeSpeech site. Remove the `test` DNS record if you no longer want it.
