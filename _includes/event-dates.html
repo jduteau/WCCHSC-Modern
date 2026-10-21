@@ -1,0 +1,8 @@
+{%- assign sd = site.data.event.start_date -%}
+{%- assign ed = site.data.event.end_date -%}
+{%- assign sm = sd | date: "%B" -%}
+{%- assign em = ed | date: "%B" -%}
+{%- if sd == ed -%}{{ sm }} {{ sd | date: "%-d, %Y" }}
+{%- elsif sm == em -%}{{ sm }} {{ sd | date: "%-d" }}&ndash;{{ ed | date: "%-d, %Y" }}
+{%- else -%}{{ sm }} {{ sd | date: "%-d" }} &ndash; {{ em }} {{ ed | date: "%-d, %Y" }}
+{%- endif -%}

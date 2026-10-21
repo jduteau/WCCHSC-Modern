@@ -1,0 +1,39 @@
+# SCHEDULE - one block per day. "day" is 0 for the first day of the event, 1 for the next, 2 after that.
+# The weekday and date are worked out automatically from start_date in event.yml.
+# Each item: time, title, and optionally speaker and details (a list of extra lines).
+- day: 0
+  items:
+    - { time: "6:00 PM", title: "Registration Opens" }
+    - time: "7:00 PM"
+      title: "Holy Mass"
+      speaker: "Fr. Paul Moret"
+      details:
+        - "Evening Prayer and Benediction"
+        - "Exposition of the Blessed Sacrament begins"
+        - "Social Time"
+- day: 1
+  items:
+    - { time: "8:00 AM",  title: "Registration, Rosary" }
+    - { time: "8:45 AM",  title: "Conference Opening" }
+    - { time: "9:00 AM",  title: "Be Not Afraid to Grow in your Teaching Style", speaker: "Thérèse McDonald" }
+    - { time: "10:30 AM", title: "Holy Mass" }
+    - { time: "11:30 AM", title: "Vendor Display Opens" }
+    - { time: "12:00 PM", title: "Lunch" }
+    - { time: "12:30 PM", title: "Confessions" }
+    - { time: "1:30 PM",  title: "Be Not Afraid to Focus on Basics", speaker: "Janice Laurence" }
+    - { time: "3:00 PM",  title: "Chaplet of Divine Mercy" }
+    - { time: "3:45 PM",  title: "Be Not Afraid of Failure", speaker: "Janice Laurence" }
+    - { time: "4:45 PM",  title: "Confessions" }
+    - { time: "5:30 PM",  title: "Supper" }
+    - { time: "6:00 PM",  title: "Confessions" }
+    - { time: "7:00 PM",  title: "Friday Night Social" }
+- day: 2
+  items:
+    - { time: "7:30 AM",  title: "Rosary" }
+    - { time: "9:00 AM",  title: "Be Not Afraid to Teach High School", speaker: "Sue Peachment" }
+    - { time: "10:30 AM", title: "Holy Mass", speaker: "Fr. Curtis Berube" }
+    - { time: "12:00 PM", title: "Lunch" }
+    - { time: "1:15 PM",  title: "Be Not Afraid to Lead as a Father", speaker: "Marc Rouleau" }
+    - { time: "2:30 PM",  title: "Be Not Afraid of Teaching Truth, Goodness & Beauty as Core", speaker: "Deacon Ken Noster" }
+    - { time: "3:30 PM",  title: "Conference Closing Remarks" }
+    - { time: "3:40 PM",  title: "Exposition ends with Chaplet of Divine Mercy & Benediction" }

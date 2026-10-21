@@ -1,0 +1,11 @@
+<table class="table table-striped table-sm w-auto">
+  {%- if include.caption -%}<caption class="caption-top fw-bold">{{ include.caption }}</caption>{%- endif -%}
+  <tbody>
+    {%- for r in include.rows -%}
+    <tr>
+      <td class="pe-5">{% if r.day %}{{ r.day }} {% endif %}{{ r.name }}{{ r.meal }}</td>
+      <td class="text-end">${{ r.price }}{% if include.suffix %}{{ include.suffix }}{% endif %}</td>
+    </tr>
+    {%- endfor -%}
+  </tbody>
+</table>

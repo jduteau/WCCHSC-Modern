@@ -1,0 +1,21 @@
+<section class="hero text-center text-white d-flex align-items-center" style="background-image: linear-gradient(rgba(0,0,0,{{ site.data.theme.hero_overlay }}), rgba(0,0,0,{{ site.data.theme.hero_overlay }})), url('{{ site.data.event.hero_image | relative_url }}');">
+  <div class="container py-5">
+    <h1 class="display-4 fw-bold">{{ site.data.event.name }}</h1>
+    <p class="display-6 my-3">{{ site.data.event.theme }}</p>
+    <p class="fs-3 mb-4">{% include event-dates.html %}</p>
+    <div class="mb-4">
+      {%- if site.data.event.show_schedule -%}<a href="#schedule" class="btn btn-primary btn-lg m-1">Schedule</a>{%- endif -%}
+      <a href="#location" class="btn btn-primary btn-lg m-1">Location</a>
+      {%- if site.data.event.show_brochure_button -%}<a href="{{ site.data.event.brochure | relative_url }}" target="_blank" class="btn btn-secondary btn-lg m-1">Download Conference Brochure</a>{%- endif -%}
+    </div>
+    <div class="mx-auto hero-intro">{{ site.data.event.intro | markdownify }}</div>
+    {%- if site.data.event.registration_open -%}
+    <p class="mt-3"><a href="{{ '/registration.html' | relative_url }}" class="btn btn-secondary btn-lg">Register Now</a></p>
+    {%- else -%}
+    <p class="fs-5 fw-bold mt-3 mb-1">Registration opens {{ site.data.event.registration_opens }}</p>
+    {%- endif -%}
+    {%- if site.data.event.announcement != "" -%}
+    <p class="fs-5">{{ site.data.event.announcement }}</p>
+    {%- endif -%}
+  </div>
+</section>

@@ -1,0 +1,11 @@
+# VENUE AND ACCOMMODATION
+name: "Providence Renewal Centre"
+address: "3005 119 St NW, Edmonton, AB T6J 5R5, Canada"
+# On Google Maps: Share > Embed a map > copy ONLY the address that follows src="
+map_embed_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.301824023602!2d-113.53680362326126!3d53.4630657723234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a01f042adc593b%3A0xee98100cddfe00aa!2sProvidence%20Renewal%20Centre!5e0!3m2!1sen!2sin!4v1691532440146!5m2!1sen!2sin"
+
+accommodation:
+  approval_phone: "780-467-8410"
+  warning: "Please do not call Providence Centre"
+  notes:
+    - "Double room preference given to married couples"

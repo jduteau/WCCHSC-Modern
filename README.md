@@ -1,21 +1,22 @@
+# WCCHSC website
 
-# Boostrap 4 Github Pages
+Website for the Western Canadian Catholic Home School Conference (www.wcchsc.net / www.wcchsc.org).
+Built with Jekyll + Bootstrap 5 (Minty theme) and published with GitHub Pages.
 
-[![Github-sponsors](https://img.shields.io/badge/sponsor-30363D?logo=GitHub-Sponsors&logoColor=#EA4AAA)](https://github.com/sponsors/nicolas-van)
+**To update the site for a new year, see [EDITING.md](EDITING.md).** No coding is needed.
 
-A [Bootstrap 5](https://getbootstrap.com/) template project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
+## Local preview (optional, for developers)
 
-* A full Bootstrap 5 theme usable both on Github Pages and with a standalone Jekyll.
-* Recompiles Bootstrap from SCSS files, which allows to customize Bootstrap's variables and use Bootstrap themes.
-* Full support of Bootstrap's JavaScript plugins.
-* Supports all features of Github Pages and Jekyll.
+    bundle install
+    bundle exec jekyll serve      # http://localhost:4000
 
-[See the website for demonstration and documentation](https://nicolas-van.github.io/bootstrap-4-github-pages/).
+## Layout
 
-## Contribution
-
-[See the contribution guide.](./CONTRIBUTING.md)
-
-## License
-
-[See the license file.](./LICENSE.md)
+| Path | What it is |
+|---|---|
+| `_data/*.yml` | All the editable content: dates, schedule, speakers, prices, FAQ, colors, menu |
+| `*.md` (root) | The pages. Mostly text, with a few `{% include %}` tags |
+| `_includes/`, `_layouts/` | HTML building blocks. Normally not edited |
+| `_sass/`, `assets/main.scss` | Styling. Colors come from `_data/theme.yml` |
+| `assets/img/` | Pictures and the brochure PDF |
+| `.github/workflows/pages.yml` | Builds and deploys on every push to `master` |

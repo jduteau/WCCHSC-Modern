@@ -1,0 +1,7 @@
+{%- comment -%} Usage: {% include register-button.html which="participant" label="Register as a Participant" %} {%- endcomment -%}
+{%- if include.which == "vendor" -%}{%- assign url = site.data.event.vendor_form_url -%}{%- else -%}{%- assign url = site.data.event.participant_form_url -%}{%- endif -%}
+{%- if site.data.event.registration_open and url != "" -%}
+<a href="{{ url }}" class="btn btn-primary btn-lg my-2" target="_blank" rel="noopener">{{ include.label }}</a>
+{%- else -%}
+<div class="alert alert-info d-inline-block my-2">Registration opens {{ site.data.event.registration_opens }}.</div>
+{%- endif -%}

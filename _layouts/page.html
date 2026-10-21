@@ -1,14 +1,7 @@
 ---
 layout: default
 ---
-<article>
-
-  <header>
-    <h1>{{ page.title | escape }}</h1>
-  </header>
-
-  <section>
-    {{ content }}
-  </section>
-
-</article>
+<div class="container page-content py-5">
+  <h1 class="mb-4">{{ page.title | escape }}</h1>
+  {{ content }}
+</div>

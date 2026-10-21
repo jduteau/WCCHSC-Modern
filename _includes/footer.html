@@ -1,43 +1,28 @@
-
-<div class="py-5 border-top">
+<footer class="bg-dark text-light py-5 mt-5">
   <div class="container">
-
-    <p class="h5 mb-3">{{ site.title | escape }}</p>
-
     <div class="row">
-
-      <div class="col-sm">
+      <div class="col-md-4 mb-4">
+        <p class="h5 mb-1">{{ site.data.event.short_name }}</p>
+        <p class="small mb-0">{{ site.data.event.name }}</p>
+        <p class="small">{% include event-dates.html %}</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5>Useful Links</h5>
         <ul class="list-unstyled">
-          <li>
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-          </li>
-          {%- if site.email -%}
-            <li>
-              <a href="mailto:{{ site.email }}">
-                {{ site.email }}
-              </a>
-            </li>
-          {%- endif -%}
+          <li><a class="link-light" href="{{ '/registration.html' | relative_url }}">Registration</a></li>
+          <li><a class="link-light" href="{{ '/terms.html' | relative_url }}">Terms of Use</a></li>
+          <li><a class="link-light" href="{{ '/privacy.html' | relative_url }}">Privacy Policy</a></li>
         </ul>
       </div>
-
-
-      <div class="col-sm text-end">
-        <p>{{- site.description | escape -}}</p>
-
-        <p>
-          <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/">Powered by Bootstrap 4 Github Pages</a>
-        </p>
-        <p>
-          <a href="https://github.com/nicolas-van/bootstrap-4-github-pages"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/nicolas-van/bootstrap-4-github-pages?style=social"></a>
-        <p>
+      <div class="col-md-4 mb-4">
+        <h5>Contact Us</h5>
+        <ul class="list-unstyled">
+          {%- if site.data.event.facebook != "" -%}
+          <li><a class="link-light" href="https://www.facebook.com/{{ site.data.event.facebook }}/">Facebook</a></li>
+          {%- endif -%}
+          <li><a class="link-light" href="mailto:{{ site.data.event.email.general }}">{{ site.data.event.email.general }}</a></li>
+        </ul>
       </div>
-
     </div>
-
   </div>
-</div>
+</footer>

@@ -1,0 +1,5 @@
+# MENU - top of every page, in this order.
+- { title: "Registration",          url: "/registration.html" }
+- { title: "Info & FAQ",            url: "/info.html" }
+- { title: "Vendors & Exhibitors",  url: "/vendors.html" }
+- { title: "Used Curriculum",       url: "/usedcurriculum.html" }

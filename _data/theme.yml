@@ -1,0 +1,6 @@
+# COLORS - change these and the whole site recolors.
+# Use hex codes like #78c2ad (see https://htmlcolorcodes.com).
+primary:   "#78c2ad"     # navigation bar, buttons
+secondary: "#f3969a"
+dark:      "#343a40"
+hero_overlay: 0.45       # 0 = no darkening of hero picture, 1 = black

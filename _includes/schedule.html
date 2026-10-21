@@ -1,0 +1,25 @@
+{%- if site.data.event.show_schedule and site.data.schedule.size > 0 -%}
+{%- assign base = site.data.event.start_date | date: "%s" | plus: 43200 -%}
+<section id="schedule" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-2">Schedule</h2>
+    <p class="text-center text-muted mb-4">Here is our event schedule</p>
+    <div class="mx-auto schedule-wrap">
+      {%- for d in site.data.schedule -%}
+      {%- assign t = d.day | times: 86400 | plus: base -%}
+      <h3 class="h4 fw-bold mt-5 pb-2 border-bottom">{{ t | date: "%A, %B %-d" }}</h3>
+      {%- for item in d.items -%}
+      <div class="row py-2 schedule-item">
+        <div class="col-md-2"><time class="fw-bold text-primary">{{ item.time }}</time></div>
+        <div class="col-md-10">
+          <div class="fw-bold">{{ item.title }}</div>
+          {%- if item.speaker and item.speaker != "" -%}<div class="text-muted">{{ item.speaker }}</div>{%- endif -%}
+          {%- for line in item.details -%}<div>{{ line }}</div>{%- endfor -%}
+        </div>
+      </div>
+      {%- endfor -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{%- endif -%}

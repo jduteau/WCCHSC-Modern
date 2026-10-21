@@ -1,0 +1,28 @@
+{%- if site.data.event.show_speakers and site.data.speakers.size > 0 -%}
+<section id="speakers" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-2">Speakers</h2>
+    <p class="text-center text-muted mb-5">Meet our esteemed speakers</p>
+    <div class="row g-4">
+      {%- for s in site.data.speakers -%}
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="d-flex">
+              {%- if s.photo != "" and s.photo -%}
+              <img src="{{ s.photo | relative_url }}" alt="{{ s.name }}" class="rounded-circle me-3 speaker-photo">
+              {%- endif -%}
+              <div>
+                <h4 class="card-title mb-1">{{ s.name }}</h4>
+                {%- if s.talk and s.talk != "" -%}<p class="text-primary fw-bold mb-2">{{ s.talk }}</p>{%- endif -%}
+              </div>
+            </div>
+            <p class="card-text">{{ s.bio }}</p>
+          </div>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{%- endif -%}

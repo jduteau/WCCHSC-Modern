@@ -1,0 +1,61 @@
+# ============================================================
+#  EVENT BASICS  -  edit this file each year
+#  Only change the text AFTER the colon. Keep the quote marks.
+# ============================================================
+
+# --- Names ---
+name: "Western Canadian Catholic Home School Conference"
+short_name: "WCCHSC"
+
+# --- Theme and dates ---
+theme: "AI - Authentic Intimacy"          # shown under the title on the home page
+# Use YYYY-MM-DD. Schedule day headings and the date line are worked out from these.
+start_date: 2027-03-18
+end_date: 2027-03-20
+
+# --- Welcome text on the home page (blank line = new paragraph) ---
+intro: |
+  With the intent of helping support your homeschooling journey, this event is an occasion for prayer, fellowship and sharing insights.
+
+  The retreat-like atmosphere provides opportunities for Holy Mass, Confession, Adoration, solid Catholic teaching, apostolates, a Catholic market and an evening social.
+
+# --- Announcement shown in the home page banner. Leave "" to hide it. ---
+announcement: "Fr. Stefano Penna has confirmed attendance - check back for updates"
+
+# --- Registration ---
+registration_open: false                  # true = Register buttons appear, false = "opens on..." message
+registration_opens: "December 1, 2026"    # shown while registration_open is false
+early_bird_deadline: ""                   # e.g. "February 20, 2027". Leave "" if none.
+# Links to your Google Forms (paste the form's share link)
+participant_form_url: ""
+vendor_form_url: ""
+
+# --- Payment instructions ---
+payment_hours: 24                         # hours to pay after registering
+etransfer_email: "wcchscreg@gmail.com"
+cheque_payable_to: "WCCHSC"
+mailing_address:
+  - "83 Granville Crescent"
+  - "Sherwood Park, AB"
+  - "T8A 3C1"
+
+# --- Contact emails ---
+email:
+  general: "wcchscinfo@gmail.com"         # footer "Contact Us"
+  registration: "wcchscreg@gmail.com"
+  vendors: "WCCHSCvendors@gmail.com"
+  vendor_contact_name: "Wendy"
+  used_curriculum: "seebooksgo@gmail.com"
+  used_curriculum_contact_name: "Alex Nazaruk"
+
+# --- Social ---
+facebook: "WCCHSC"                        # facebook.com/<this>
+
+# --- Files ---
+hero_image: "/assets/img/hero.jpg"        # big picture behind the home page title
+brochure: "/assets/img/WCCHSCBrochure.pdf"
+show_brochure_button: false               # true = "Download Conference Brochure" button on home page
+
+# --- Which home page sections to show ---
+show_speakers: true
+show_schedule: true                      # set to true once the schedule is final

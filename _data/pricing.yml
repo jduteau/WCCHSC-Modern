@@ -1,0 +1,27 @@
+# PRICES - all in Canadian dollars. Numbers only (no $ sign).
+
+participant:
+  - { name: "Single Adult",   price: 120 }
+  - { name: "Married couple", price: 160 }
+  - { name: "Youth",          price: 50 }
+
+accommodation:                     # per night
+  - { name: "Single (remote bathroom)", price: 70 }
+  - { name: "Double (with bathroom)",   price: 100 }
+  - { name: "Extra person",             price: 10 }
+
+meals:
+  - { day: "Friday",   meal: "Breakfast", price: 14 }
+  - { day: "Friday",   meal: "Lunch",     price: 21 }
+  - { day: "Friday",   meal: "Supper",    price: 22 }
+  - { day: "Saturday", meal: "Breakfast", price: 14 }
+  - { day: "Saturday", meal: "Lunch",     price: 21 }
+
+vendor:
+  - { name: "Basic: 1 table / 2 reps", price: 150 }
+  - { name: "Additional table",        price: 40 }
+  - { name: "Additional rep",          price: 25 }
+
+used_curriculum:
+  registration_fee: 5
+  commission_percent: 20

@@ -1,0 +1,12 @@
+<div class="accordion" id="faqAccordion">
+  {%- for item in site.data.faq -%}
+  <div class="accordion-item">
+    <h3 class="accordion-header" id="faq-h{{ forloop.index }}">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-{{ forloop.index }}" aria-expanded="false" aria-controls="faq-{{ forloop.index }}">{{ item.question }}</button>
+    </h3>
+    <div id="faq-{{ forloop.index }}" class="accordion-collapse collapse" aria-labelledby="faq-h{{ forloop.index }}" data-bs-parent="#faqAccordion">
+      <div class="accordion-body">{{ item.answer | markdownify }}</div>
+    </div>
+  </div>
+  {%- endfor -%}
+</div>
