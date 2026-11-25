@@ -25,7 +25,7 @@ announcement: ""
 # --- Registration ---
 registration_open: false                  # true = Register buttons appear, false = "opens on..." message
 registration_opens: "December 1, 2026"    # shown while registration_open is false
-early_bird_deadline: ""                   # e.g. "February 20, 2027". Leave "" if none.
+early_bird_deadline: "February 28, 2027"                   # e.g. "February 20, 2027". Leave "" if none.
 # Links to your Google Forms (paste the form's share link)
 participant_form_url: ""
 vendor_form_url: ""
