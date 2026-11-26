@@ -7,7 +7,7 @@
 participant:
   - { name: "Single Adult",   price: 100, early_bird: 90 }
   - { name: "Married couple", price: 160, early_bird: 140 }
-  - { name: "Student accompanying parent",  rice: 50 }
+  - { name: "Student accompanying parent",  price: 50 }
 
 accommodation:                     # per night
   - { name: "Single (remote bathroom)", price: 70 }
