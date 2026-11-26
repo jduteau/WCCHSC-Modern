@@ -5,7 +5,7 @@
 # Early bird columns only appear while `early_bird_deadline` in event.yml is set.
 
 participant:
-  - { name: "Single Adult",   price: 100, early_bird: 90 }
+  - { name: "Single Adult",   price: 120, early_bird: 100 }
   - { name: "Married couple", price: 160, early_bird: 140 }
   - { name: "Student accompanying parent",  price: 50 }
 
