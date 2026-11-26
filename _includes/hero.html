@@ -9,11 +9,10 @@
       {%- if site.data.event.show_brochure_button -%}<a href="{{ site.data.event.brochure | relative_url }}" target="_blank" class="btn btn-secondary btn-lg m-1">Download Conference Brochure</a>{%- endif -%}
     </div>
     <div class="mx-auto hero-intro">{{ site.data.event.intro | markdownify }}</div>
-    {%- if site.data.event.registration_open -%}
-    <p class="mt-3"><a href="{{ '/registration.html' | relative_url }}" class="btn btn-secondary btn-lg">Register Now</a></p>
-    {%- else -%}
-    <p class="fs-5 fw-bold mt-3 mb-1">Registration opens {{ site.data.event.registration_opens }}</p>
-    {%- endif -%}
+    <p class="mt-3 mb-1"><a href="{{ '/registration.html' | relative_url }}" class="btn btn-secondary btn-lg">Register Now</a></p>
+    {%- unless site.data.event.registration_open -%}
+    <p class="fs-5 fw-bold mb-1">Registration opens {{ site.data.event.registration_opens }}</p>
+    {%- endunless -%}
     {%- if site.data.event.announcement != "" -%}
     <p class="fs-5">{{ site.data.event.announcement }}</p>
     {%- endif -%}
