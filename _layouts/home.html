@@ -1,5 +1,8 @@
 ---
 layout: default
 ---
-{% include hero.html %}
-{{ content }}
+<div class="home-bg">
+  <div class="home-bg-image" style="background-image: linear-gradient(rgba(119,76,29,{{ site.data.theme.hero_overlay }}), rgba(119,76,29,{{ site.data.theme.hero_overlay }})), url('{{ site.data.event.hero_image | relative_url }}');"></div>
+  {% include hero.html %}
+  {{ content }}
+</div>

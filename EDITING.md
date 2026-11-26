@@ -23,7 +23,7 @@ If you make a mistake, the site's build will turn red in **Actions** and the old
 | Show the schedule / speakers | `_data/event.yml` | `show_schedule`, `show_speakers` (true / false) |
 | Contact emails, payment address | `_data/event.yml` | `email:` and `mailing_address:` sections |
 | Venue and map | `_data/venue.yml` | See the comment in the file for the map link |
-| Prices (registration, meals, rooms, tables) | `_data/pricing.yml` | The `price:` numbers |
+| Prices (registration, meals, rooms, tables) | `_data/pricing.yml` | `price:` is the regular price; add `early_bird:` to a row for an early bird price |
 | Schedule | `_data/schedule.yml` | Copy an existing line and change the time/title/speaker |
 | Speakers | `_data/speakers.yml` | Copy one block, change name, talk and bio |
 | FAQ | `_data/faq.yml` | Copy one question/answer pair |

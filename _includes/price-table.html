@@ -1,9 +1,21 @@
+{%- assign has_early = false -%}
+{%- if include.early_bird_active != false and site.data.event.early_bird_deadline != "" -%}
+  {%- for r in include.rows -%}{%- if r.early_bird != nil -%}{%- assign has_early = true -%}{%- endif -%}{%- endfor -%}
+{%- endif -%}
 <table class="table table-striped table-sm w-auto">
   {%- if include.caption -%}<caption class="caption-top fw-bold">{{ include.caption }}</caption>{%- endif -%}
+  {%- if has_early -%}
+  <thead>
+    <tr><th></th><th class="text-end ps-4">Early bird<br><small class="fw-normal">until {{ site.data.event.early_bird_deadline }}</small></th><th class="text-end ps-4">Regular</th></tr>
+  </thead>
+  {%- endif -%}
   <tbody>
     {%- for r in include.rows -%}
     <tr>
       <td class="pe-5">{% if r.day %}{{ r.day }} {% endif %}{{ r.name }}{{ r.meal }}</td>
+      {%- if has_early -%}
+      <td class="text-end">{% if r.early_bird != nil %}${{ r.early_bird }}{% else %}${{ r.price }}{% endif %}{% if include.suffix %}{{ include.suffix }}{% endif %}</td>
+      {%- endif -%}
       <td class="text-end">${{ r.price }}{% if include.suffix %}{{ include.suffix }}{% endif %}</td>
     </tr>
     {%- endfor -%}

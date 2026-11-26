@@ -108,3 +108,36 @@ h2 {
     color: $secondary !important;
   }
 }
+
+// Home page: hero image fixed behind the whole page; sections sit on translucent panels.
+.home-bg {
+  position: relative;
+
+  .home-bg-image {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: top left;
+  }
+
+  .hero {
+    background: none;
+  }
+
+  section:not(.hero) {
+    background: none !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+
+    > .container {
+      background: rgba(255, 255, 255, .92);
+      border-radius: .5rem;
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  section:last-of-type {
+    padding-bottom: 3rem !important;
+  }
+}
