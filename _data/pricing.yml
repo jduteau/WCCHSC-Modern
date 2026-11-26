@@ -5,9 +5,9 @@
 # Early bird columns only appear while `early_bird_deadline` in event.yml is set.
 
 participant:
-  - { name: "Single Adult",   price: 120, early_bird: 100 }
-  - { name: "Married couple", price: 160, early_bird: 150 }
-  - { name: "Student accompanying parent",  price: 50 }
+  - { name: "Single Adult",   price: 100, early_bird: 90 }
+  - { name: "Married couple", price: 160, early_bird: 140 }
+  - { name: "Student accompanying parent",  rice: 50 }
 
 accommodation:                     # per night
   - { name: "Single (remote bathroom)", price: 70 }
@@ -15,11 +15,11 @@ accommodation:                     # per night
   - { name: "Extra person",             price: 10 }
 
 meals:
-  - { day: "Friday",   meal: "Breakfast", price: 14 }
-  - { day: "Friday",   meal: "Lunch",     price: 21 }
-  - { day: "Friday",   meal: "Supper",    price: 22 }
-  - { day: "Saturday", meal: "Breakfast", price: 14 }
-  - { day: "Saturday", meal: "Lunch",     price: 21 }
+  - { day: "Friday",   meal: "Breakfast", price: 15 }
+  - { day: "Friday",   meal: "Lunch",     price: 23 }
+  - { day: "Friday",   meal: "Supper",    price: 24 }
+  - { day: "Saturday", meal: "Breakfast", price: 15 }
+  - { day: "Saturday", meal: "Lunch",     price: 23 }
 
 vendor:
   - { name: "Basic: 1 table / 2 reps", price: 150 }
